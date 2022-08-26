@@ -27,35 +27,54 @@ const getActualRequestDurationInMilliseconds = start => {
   
   
 let demoLogger = (req, res, next) => { //middleware function
-    let current_datetime = new Date();
+    let current_dateTime = new Date()
     let formatted_date =
-    current_datetime.getFullYear() +
-    "-" +
-    (current_datetime.getMonth() + 1) +
-    "-" +
-    current_datetime.getDate() +
-    " " +
-    current_datetime.getHours() +
+   
+    current_dateTime.toUTCString() +
+    "  " +
+    // current_datetime.getFullYear() +
+    // "-" +
+    // (current_datetime.getMonth() + 1) +
+    // "-" +
+    // current_datetime.getDate() +
+    // " " +
+    current_dateTime.getHours() +
     ":" +
-    current_datetime.getMinutes() +
+    current_dateTime.getMinutes() +
     ":" +
-    current_datetime.getSeconds() +
-    ":" + 
-    current_datetime.toDateString() 
+    current_dateTime.getSeconds() 
     
+    let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     let method = req.method
     let url = req.url
-    let status = res.statusCode
     const start = process.hrtime()
     const durationInMilliseconds = getActualRequestDurationInMilliseconds(start);
-    let log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMilliseconds.toLocaleString()} ms`;
-    console.log(log)
 
-    fs.appendFile("log.txt", log + "\n", err => {
-        if (err) {
-        console.log(err);
-        }
-    });
+    // Get Status Code
+    // Way 1: Override res.end
+    const originalEnd = res.end
+    res.end = (data, encoding) => {
+        const status = res.statusCode
+        let log = `${ip} accessed /hello with ${method} at ${url} ${formatted_date} ${durationInMilliseconds.toLocaleString()} (Philippine Standard Time) with status code ${status}.`;
+        console.log(log)
+    
+        fs.appendFile("log.txt", log + "\n", err => {
+            if (err) {
+                console.log(err);
+                }
+            });
+        
+        originalEnd.call(res, data, encoding)
+    }
+
+    // Way 2: Event Listeners
+    // res.on('finish', () => {
+    //     console.log(res.statusCode)
+    // })
+
+    // Way 3: Use 3rd party library
+    // https://www.npmjs.com/package/on-finished
+
     next()
 }
 

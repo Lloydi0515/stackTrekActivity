@@ -1,15 +1,18 @@
 
-::ffff:127.0.0.1 GET:/ Fri, 26 Aug 2022 07:51:16 GMT  15:51:16 0.056 with status code 200
-::ffff:127.0.0.1 accessed /hello GET:/ Fri, 26 Aug 2022 07:52:37 GMT  15:52:37 0.094 with status code 200
-::ffff:127.0.0.1 accessed with /hello GET:/ Fri, 26 Aug 2022 07:52:55 GMT  15:52:55 0.053 with status code 200
-::ffff:127.0.0.1 accessed with /hello PUT:/ Fri, 26 Aug 2022 07:53:11 GMT  15:53:11 0.01 with status code 404
-::ffff:127.0.0.1 accessed /hello with PUT at / Fri, 26 Aug 2022 07:57:50 GMT  15:57:50 0.077 with status code 404
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 07:57:54 GMT  15:57:54 0.004 with status code 200
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:00:07 GMT  16:0:7 0.06(Philippine Standard Time) with status code 200
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:00:24 GMT  16:0:24 0.292 (Philippine Standard Time) with status code 200
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:04:17 GMT  16:4:17 0.052 (Philippine Standard Time) with status code 200
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:06:30 GMT  16:6:30 0.047 (Philippine Standard Time) with status code 200
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:06:58 GMT  16:6:58 0.088 (Philippine Standard Time) with status code 200.
-::ffff:127.0.0.1 accessed /hello with GET at /about Fri, 26 Aug 2022 08:08:22 GMT  16:8:22 0.02 (Philippine Standard Time) with status code 200.
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:09:08 GMT  16:9:8 0.051 (Philippine Standard Time) with status code 404.
-::ffff:127.0.0.1 accessed /hello with GET at / Fri, 26 Aug 2022 08:09:25 GMT  16:9:25 0.077 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with GET at /contact Thu, 01 Sep 2022 02:35:16 GMT  10:35:16 0.03 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with POST at /data Thu, 01 Sep 2022 02:38:53 GMT  10:38:53 0.005 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with POST at /data Thu, 01 Sep 2022 02:38:53 GMT  10:38:53 0.068 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with PUT at / Thu, 01 Sep 2022 02:39:40 GMT  10:39:40 0.008 (Philippine Standard Time) with status code 404.
+::ffff:127.0.0.1 accessed /hello with PUT at / Thu, 01 Sep 2022 02:39:40 GMT  10:39:40 0.035 (Philippine Standard Time) with status code 404.
+::ffff:127.0.0.1 accessed /hello with GET at / Thu, 01 Sep 2022 02:41:54 GMT  10:41:54 0.008 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with GET at / Thu, 01 Sep 2022 02:41:54 GMT  10:41:54 0.182 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with GET at /data Thu, 01 Sep 2022 02:42:05 GMT  10:42:5 0.009 (Philippine Standard Time) with status code 400.
+::ffff:127.0.0.1 accessed /hello with GET at /data Thu, 01 Sep 2022 02:42:05 GMT  10:42:5 0.006 (Philippine Standard Time) with status code 400.
+::ffff:127.0.0.1 accessed /hello with POST at /data Thu, 01 Sep 2022 02:42:18 GMT  10:42:18 0.004 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with POST at /data Thu, 01 Sep 2022 02:42:18 GMT  10:42:18 0.005 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with DELETE at / Thu, 01 Sep 2022 02:45:00 GMT  10:45:0 0.005 (Philippine Standard Time) with status code 400.
+::ffff:127.0.0.1 accessed /hello with DELETE at / Thu, 01 Sep 2022 02:45:00 GMT  10:45:0 0.075 (Philippine Standard Time) with status code 400.
+::ffff:127.0.0.1 accessed /hello with GET at / Thu, 01 Sep 2022 02:45:17 GMT  10:45:17 0.004 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with GET at / Thu, 01 Sep 2022 02:45:17 GMT  10:45:17 0.006 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with POST at /data Thu, 01 Sep 2022 02:45:36 GMT  10:45:36 0.004 (Philippine Standard Time) with status code 200.
+::ffff:127.0.0.1 accessed /hello with POST at /data Thu, 01 Sep 2022 02:45:36 GMT  10:45:36 0.006 (Philippine Standard Time) with status code 200.

@@ -7,7 +7,7 @@ import { generateJwt } from './jwt/jwtGenerator.js'
 import { auth } from './middleware/auth.js'
 
 const pool = connectDatabase()
-const app = express()
+const app = express()  
 const PORT = 8000
 
 app.use(express.json())
@@ -37,7 +37,7 @@ app.post('/register', async (req, res) => {
         // Add the new user into the database
         // generate the uuid using the uuidv4()functions
         const newUser = await pool.query(` INSERT INTO users (uuid, username, password)
-        VALUES ($1, $2, $3) RETURNING *`, [uuidv4(), username, bcryptPassword])
+        VALUES ($1, $2, $3) RETURNING * `, [uuidv4(), username, bcryptPassword])
 
         // generate and return the JWT token
         const token = generateJwt(newUser.rows[0])
@@ -61,7 +61,7 @@ app.post('/login', async (req, res ) => {
         } = req.body
         // check if the user is not existing
         const user = await pool.query(`SELECT * FROM users WHERE username = $1`, [username])
-        if (username.rows.length < 0 ) {
+        if (user.rows.length < 0 ) {
             res.status(401).send("User does not exist")
         }
         // check if the password matches using bcrypt
@@ -83,7 +83,7 @@ app.post('/login', async (req, res ) => {
     }
 })
 
-// provide the aut middleware
+// provide the auth middleware
 
 app.get('/verify', auth, async (req, res) => {
     try {

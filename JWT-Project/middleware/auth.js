@@ -13,12 +13,12 @@ const auth = (req, res, next ) => {
         // jwt.verify function to process it
         jwt.verify(token.slice(7), process.env.jwtSecret, (err, user) => {
             if (err) return res.sendStatus(403)
-            // this will store the user payload in the request
-            req.user = user
+                // this will store the user payload in the request
+                req.user = user
             next()
         })
     } catch (err) {
-        res.status(401).json ({ error: err.message})
+        res.status(401).json ({ error: err.message })
     }
 }
 

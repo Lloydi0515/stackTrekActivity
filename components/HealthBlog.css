@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.image {
+  width: 100%;
+  height: 80vh;
+}
+.tips {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  margin-left: 430px !important;
+  padding: 5px;
+  text-align: center;
+  font-size: 50px;
+  border: 2px solid #0e6efb;
+  width: 40%;
+  align-items: center;
+}
+
+.blog-1 {
+  background-color: #0e6efb;
+}
+.blog-4 {
+  margin: 30px 20px 0px 20px;
+}
+.blog-5 {
+  color: #f9c132;
+  margin-right: 300px;
+}
+
+p {
+  color: #fff;
+  margin: 20px;
+  font-size: 18px;
+}
+.healthBtn {
+  margin-right: 520px;
+  margin-bottom: 40px;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border: 2px solid #f9c132;
+  border-radius: 5px !important;
+  background: none;
+  font-size: 18px;
+}
+.healthBtn:hover {
+  color: #f9c132;
+  width: 120px;
+}
+#health {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+  background-color: #0e6efb;
+}
+blog-2 {
+  color: #fff;
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f9c132;
+  border-width: 5px;
+  width: 50%;
+}
+
+/* Responsive section */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  div#health.blog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    padding-right: 300px;
+  }
+
+  .tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 280px !important;
+  }
+  .blog-4 {
+    padding-left: 340px;
+    overflow: hidden;
+  }
+}
+
+/** For mobile devices **/
+
+@media (max-width: 568px) {
+  div#health.blog {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+    align-content: stretch;
+    height: 100%;
+    width: 140vw;
+    padding-right: 400px !important;
+
+    /* margin-right: 300px !important; */
+  }
+  .blog-4 {
+    padding-left: 340px;
+    overflow: hidden;
+  }
+  .tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 180px !important;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+@media (min-width: 576px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+    flex-direction: column;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+    flex-direction: column;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+    flex-direction: column;
+  }
+}

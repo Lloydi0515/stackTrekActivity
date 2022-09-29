@@ -1,0 +1,107 @@
+.bg-primary {
+  background-image: url(../../public/img/banner1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+  margin-bottom: 0px;
+}
+.container {
+  margin-top: 300px;
+}
+h1 {
+  color: #282380;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* .bannerBtn {
+    width: 100px;
+    height: 50px;
+}
+.bannerBtn:hover {
+    width: 200px;
+    background-color: #F9C232;
+} */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 400px;
+  padding-right: 500px;
+}
+.lead {
+  color: #282380;
+}
+.custom-shape-divider-bottom-1658932138 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658932138 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 94px;
+}
+
+.custom-shape-divider-bottom-1658932138 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1658932138 svg {
+    width: calc(140% + 1.3px);
+    height: 80px;
+  }
+  .news-input {
+    width: 50%;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1658932138 svg {
+    width: calc(150% + 1.3px);
+    height: 46px;
+  }
+  img.rounded.float-start {
+    margin-left: -40px !important;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media (max-width: 568px) {
+  img.rounded.float-start {
+    margin-left: -10px !important;
+    width: 80px !important;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 200px;
+  }
+  p.lead.fs-4.fw-bold.mt-0 {
+    line-height: 30px;
+  }
+}

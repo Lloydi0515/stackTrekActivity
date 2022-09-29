@@ -1,0 +1,26 @@
+[
+  {
+    "id": "01",
+    "title": "AASM Sleeping Education",
+    "content": "The American Academy of Sleep Medicine (AASM) launched the Sleep Education website in 2005. The site has reliable information about sleep, sleep disorders, & treatment options. It is a valuable resource for patients who have sleep disorders. The site provides accurate medical & scientific insight in a concise manner that is easy to understand. It also provides facts that will be useful to anyone who wants to learn more about sleep. Visit us at",
+    "link": ["https://sleepeducation.org/blogs"]
+  },
+  {
+    "id": "02",
+    "title": " Better Sleep Council Blog",
+    "content": "The Better Sleep Council (BSC) provides research, insights and educational resources to empower consumers to make smarter sleep decisions. If you are not sleeping on the latest industry news then explore the Better Sleep Council blog to learn about emerging trends, recent announcements, expert analysis, and more.",
+    "link": ["<a href=bettersleep.org/blog"]
+  },
+  {
+    "id": "03",
+    "title": "Little Z's Sleep Consulting",
+    "content": "Hey there! I'm Becca Campbell, your Pediatric Sleep Consultant and this is the Little Z's Sleep blog where I'm committed to resolving your child's exhausting sleep habits! The ultimate goal is to help families find wellness by creating a plan for their baby. We work together to implement a solution for all. Let's make sleep a thing!",
+    "link": ["<a href=littlezsleep.com/blog"]
+  },
+  {
+    "id": "04",
+    "title": "The Sleep Consultant Blog",
+    "content": "Riley Jarvis Sleep Consulting helps CEOs & top performers transform their sleep, increasing their productivity with the best-in-class individualized sleep training. Riley is an internationally renowned Sleep Consultant who has helped high functioning individuals achieve more out of their life & business using cutting edge sleeping strategies. Read his blog to learn the essentials of what you can do right now to start sleeping better tonight.",
+    "link": ["<a href=thesleepconsultant.com/blog"]
+  }
+]

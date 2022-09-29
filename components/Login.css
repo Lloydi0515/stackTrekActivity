@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login {
+  width: 420px;
+  height: 620px;
+  background: #0e6efb;
+  color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 60px 30px;
+}
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login p {
+  margin: 0px;
+  font-weight: bold;
+}
+.login input {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.login input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #282482;
+  /* opacity: 1;  */
+}
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #3d8854;
+  color: #fff;
+  font-size: 18px;
+}
+.login input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.login a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.login a:hover {
+  color: #ffc107;
+}

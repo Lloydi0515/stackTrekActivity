@@ -1,0 +1,44 @@
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+}
+
+/** For Responsive devices **/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    margin-left: 120px !important;
+  }
+}
+
+@media (max-width: 568px) {
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+  }
+}

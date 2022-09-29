@@ -1,21 +1,12 @@
 function nbYear(p0, percent, aug, p) {
-   let year;
-  for (year = 1; p0 < p; year++){
-    p0 += parseInt(p0 * (percent / 100))
-    p0 += aug
-    
+  let year;
+  for (year = 1; p0 < p; year++) {
+    p0 += parseInt(p0 * (percent / 100));
+    p0 += aug;
   }
- return year - 1
+  return year - 1;
 }
 // console.log(nbYear(1500, 5, 100, 5000));
-
-
-
-
-
-
-
-
 
 // Bale gusto raw po natin isolve kung ilang taon ba yung kailangan hintayin para maging equal or lagpas dun sa p value yung number of chickens dun sa farm.
 // Starting value ng chicken at year 0 is 100.
